@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BNR Partners | Security Compliance & Technical Advisory Services</title>
+  <meta name="description" content="BNR Partners provides expert security compliance and technical advisory services for growing businesses worldwide. Specializing in SOC 2, ISO 27001, Essential 8, APRA CPS 234, and DevSecOps implementation.">
+  <meta name="keywords" content="security compliance, technical advisory, CISO services, CTO services, DevSecOps, security architecture, cybersecurity consulting, risk management, cloud security">
+  <meta name="author" content="BNR Partners">
+  <link rel="canonical" href="https://bnr.partners/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bnr.partners/">
+  <meta property="og:title" content="BNR Partners | Security Compliance & Technical Advisory Services">
+  <meta property="og:description" content="Expert security compliance and technical advisory services for growing businesses worldwide. Specializing in SOC 2, ISO 27001, Essential 8, APRA CPS 234, and DevSecOps implementation.">
+  <meta property="og:site_name" content="BNR Partners">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://bnr.partners/">
+  <meta name="twitter:title" content="BNR Partners | Security Compliance & Technical Advisory Services">
+  <meta name="twitter:description" content="Expert security compliance and technical advisory services for growing businesses worldwide. Specializing in SOC 2, ISO 27001, Essential 8, APRA CPS 234, and DevSecOps implementation.">
+  
+  <!-- Additional SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --bg: #0f172a;
+      --bg-secondary: #1e293b;
+      --fg: #f1f5f9;
+      --fg-muted: #cbd5e1;
+      --accent: #3b82f6;
+      --accent-bright: #60a5fa;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --border: rgba(148, 163, 184, 0.15);
+      --card-bg: rgba(30, 41, 59, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+      background-size: 200% 200%;
+      animation: gradientShift 15s ease infinite;
+      color: var(--fg);
+      padding: 2rem;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, var(--accent-glow), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.1), transparent 40%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main {
+      max-width: 62rem;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(
+        145deg,
+        rgba(30, 41, 59, 0.7) 0%,
+        rgba(15, 23, 42, 0.8) 100%
+      );
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      padding: clamp(2.5rem, 6vw, 4rem);
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+      animation: fadeIn 0.8s ease-out;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.25rem;
+      box-shadow: 
+        0 4px 12px rgba(59, 130, 246, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+    }
+
+    .logo-text {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 3.75rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+      display: inline;
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--fg);
+      letter-spacing: -0.01em;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 3rem;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: clamp(1.35rem, 3.2vw, 1.75rem);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--accent-bright);
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.0625rem;
+      margin-bottom: 1rem;
+      color: var(--fg-muted);
+    }
+
+    header p {
+      font-size: 1.1875rem;
+      color: var(--fg);
+      line-height: 1.7;
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+
+    ul {
+      margin-left: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.875rem;
+    }
+
+    li {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--fg-muted);
+      padding-left: 1.75rem;
+      position: relative;
+    }
+
+    li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent-bright);
+      font-weight: bold;
+    }
+
+    li strong {
+      color: var(--fg);
+      font-weight: 600;
+    }
+
+    .section {
+      display: grid;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      background: rgba(30, 41, 59, 0.65);
+      border-color: rgba(148, 163, 184, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .section > div {
+      padding: 1rem 0;
+    }
+
+    .section > div:not(:last-child) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .partners {
+      text-align: center;
+      margin-top: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .partners p:first-child {
+      color: var(--fg-muted);
+      font-size: 0.9375rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--accent-bright);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+      transition: width 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+      }
+
+      main {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+        border-radius: 1.25rem;
+        width: 100%;
+      }
+
+      header {
+        padding-bottom: 1.5rem;
+      }
+
+      .logo-container {
+        gap: 0.5rem;
+      }
+
+      .logo {
+        padding: 0.625rem 1rem;
+        border-radius: 0.625rem;
+      }
+
+      .logo-text {
+        font-size: clamp(1.75rem, 6vw, 2.25rem);
+      }
+
+      h1 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+      }
+
+      header p {
+        font-size: 1.0625rem;
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 5vw, 1.75rem);
+        margin-bottom: 1.25rem;
+      }
+
+      h2::after {
+        width: 2.5rem;
+        bottom: -0.75rem;
+      }
+
+      h3 {
+        font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      li {
+        font-size: 1rem;
+        padding-left: 1.5rem;
+      }
+
+      .section {
+        padding: 1.5rem 1.25rem;
+        gap: 1.25rem;
+      }
+
+      .section > div {
+        padding: 1rem 0;
+      }
+
+      ul {
+        gap: 0.75rem;
+      }
+
+      .partners {
+        padding-top: 1.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .partners p:first-child {
+        font-size: 0.875rem;
+      }
+
+      .partners p:last-child {
+        font-size: 0.9375rem;
+      }
+
+      /* Better touch targets for mobile */
+      a {
+        padding: 0.25rem 0;
+        display: inline-block;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 0.75rem;
+        padding-top: 1.5rem;
+      }
+
+      main {
+        padding: 1.75rem 1.25rem;
+        gap: 1.75rem;
+        border-radius: 1rem;
+      }
+
+      header {
+        padding-bottom: 1.25rem;
+      }
+
+      .logo-container {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .logo {
+        padding: 0.5rem 0.875rem;
+        border-radius: 0.5rem;
+      }
+
+      .logo-text {
+        font-size: 1.625rem;
+        letter-spacing: 0.12em;
+      }
+
+      h1 {
+        font-size: 1.875rem;
+        letter-spacing: -0.01em;
+      }
+
+      header p {
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      h2::after {
+        width: 2rem;
+        height: 2px;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem;
+      }
+
+      p {
+        font-size: 0.9375rem;
+        line-height: 1.7;
+      }
+
+      li {
+        font-size: 0.9375rem;
+        padding-left: 1.25rem;
+        line-height: 1.65;
+      }
+
+      li::before {
+        font-size: 0.875rem;
+      }
+
+      .section {
+        padding: 1.25rem 1rem;
+        gap: 1rem;
+      }
+
+      .section > div {
+        padding: 0.875rem 0;
+      }
+
+      ul {
+        gap: 0.625rem;
+      }
+
+      .partners {
+        padding-top: 1.25rem;
+      }
+
+      .partners p:first-child {
+        font-size: 0.8125rem;
+        margin-bottom: 0.875rem;
+      }
+
+      .partners p:last-child {
+        font-size: 0.875rem;
+        line-height: 1.8;
+      }
+
+      /* Disable hover effects on small touch screens */
+      .section:hover {
+        transform: none;
+      }
+
+      /* Better spacing for links on mobile */
+      .partners a {
+        padding: 0.375rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <span class="logo-text">BNR</span>
+        </div>
+        <h1>Partners</h1>
+      </div>
+      <p>Expert security compliance and technical advisory services that help growing businesses build secure, compliant technology platforms—without the overhead of full-time executive hires.</p>
+    </header>
+
+    <section class="section">
+      <h2>The Challenge</h2>
+      <p>Growing businesses face increasing security and compliance demands—from SOC 2 and ISO 27001 to Essential 8 and APRA CPS 234. Access to high-quality expertise shouldn't require significant overhead or long-term commitments.</p>
+    </section>
+
+    <section class="section">
+      <h2>Our Solution</h2>
+      <p>We deliver flexible, executive-level security and technical expertise that scales with your business:</p>
+      <ul>
+        <li><strong>Compliance frameworks</strong>—strategic guidance and implementation for SOC 2, ISO 27001, Essential 8, and APRA CPS 234</li>
+        <li><strong>Security architecture</strong>—scalable designs that support business growth and protect critical assets</li>
+        <li><strong>DevSecOps implementation</strong>—accelerate secure deployments without slowing innovation</li>
+        <li><strong>Compliance automation</strong>—reduce manual overhead while increasing reliability and auditability</li>
+        <li><strong>Risk management</strong>—identify, prioritise, and mitigate security risks aligned with business objectives</li>
+        <li><strong>Technical advisory</strong>—hands-on implementation and strategic guidance tailored to your needs</li>
+        <li><strong>Team development</strong>—mentorship and training to build lasting security capabilities</li>
+        <li><strong>Flexible engagement</strong>—access CISO and CTO-level expertise without full-time commitments</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>How We Work</h2>
+      <p>Choose the engagement model that fits your needs:</p>
+      <div>
+        <h3>Project Engagements</h3>
+        <p>Time-bound, outcome-focused solutions for specific objectives:</p>
+        <ul>
+          <li>Compliance certification preparation and audit readiness</li>
+          <li>Security architecture reviews and remediation planning</li>
+          <li>Technology stack assessment and optimisation</li>
+          <li>Infrastructure security audits and gap analysis</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ongoing Partnerships</h3>
+        <p>Continuous strategic support as an extension of your leadership team:</p>
+        <ul>
+          <li>Security governance, policy development, and compliance management</li>
+          <li>Technical advisory with hands-on implementation support</li>
+          <li>Proactive risk management and threat mitigation</li>
+          <li>Technology strategy and roadmap development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Our Expertise</h2>
+      <p>Our founding partners bring decades of combined experience as CISO and CTO, delivering complementary executive-level expertise across:</p>
+      <ul>
+        <li>Security compliance frameworks—implementation, audit preparation, and ongoing management</li>
+        <li>Enterprise architecture—cloud security, infrastructure design, and system integration</li>
+        <li>Risk management—governance frameworks, threat modeling, and mitigation strategies</li>
+        <li>Technology leadership—strategic planning and execution for scaling businesses</li>
+        <li>Data protection—privacy programme design and regulatory compliance</li>
+        <li>DevSecOps—secure CI/CD pipelines and automated security controls</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Get Started</h2>
+      <p>Ready to strengthen your security posture and compliance framework? Let's discuss how we can support your organisation's goals.</p>
+      <p><strong>Email us:</strong> <a href="mailto:hello@bnr.partners">hello@bnr.partners</a></p>
+      <p>We typically respond within one business day to schedule an initial consultation.</p>
+    </section>
+
+    <div class="partners">
+      <p>Explore our partner companies:</p>
+      <p>
+        <a href="https://bernhardt.ltd" target="_blank" rel="noopener">Bernhardt Ltd</a>
+        &nbsp;&bull;&nbsp;
+        <a href="https://whc.services" target="_blank" rel="noopener">WHC Services</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
