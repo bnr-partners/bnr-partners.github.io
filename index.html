@@ -3,528 +3,368 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BNR Partners | Security Compliance & Technical Advisory Services</title>
-  <meta name="description" content="BNR Partners provides expert security compliance and technical advisory services for growing businesses worldwide. Strategic guidance, implementation support, and DevSecOps expertise.">
-  <meta name="keywords" content="security compliance, technical advisory, CISO services, CTO services, DevSecOps, security architecture, cybersecurity consulting, risk management, cloud security">
+  <title>BNR Partners | Bridging the Gap in Technical Leadership</title>
+  <meta name="description" content="BNR Partners helps companies close the gap in strategic leadership and fill capability gaps. Expert security compliance and technical advisory services.">
+  <meta name="keywords" content="security compliance, technical advisory, CISO services, CTO services, DevSecOps, security architecture, cybersecurity consulting, risk management, cloud security, interim leadership">
   <meta name="author" content="BNR Partners">
   <link rel="canonical" href="https://bnr.partners/">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bnr.partners/">
-  <meta property="og:title" content="BNR Partners | Security Compliance & Technical Advisory Services">
-  <meta property="og:description" content="Expert security compliance and technical advisory services for growing businesses worldwide. Strategic guidance, implementation support, and DevSecOps expertise.">
+  <meta property="og:title" content="BNR Partners | Bridging the Gap in Technical Leadership">
+  <meta property="og:description" content="BNR Partners helps companies close the gap in strategic leadership and fill capability gaps. Expert security compliance and technical advisory services.">
   <meta property="og:site_name" content="BNR Partners">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://bnr.partners/">
-  <meta name="twitter:title" content="BNR Partners | Security Compliance & Technical Advisory Services">
-  <meta name="twitter:description" content="Expert security compliance and technical advisory services for growing businesses worldwide. Strategic guidance, implementation support, and DevSecOps expertise.">
+  <meta name="twitter:title" content="BNR Partners | Bridging the Gap in Technical Leadership">
+  <meta name="twitter:description" content="BNR Partners helps companies close the gap in strategic leadership and fill capability gaps. Expert security compliance and technical advisory services.">
   
   <!-- Additional SEO -->
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
     :root {
-      color-scheme: light dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      --bg: #0f172a;
-      --bg-secondary: #1e293b;
-      --fg: #f1f5f9;
-      --fg-muted: #cbd5e1;
-      --accent: #3b82f6;
-      --accent-bright: #60a5fa;
-      --accent-glow: rgba(59, 130, 246, 0.15);
-      --border: rgba(148, 163, 184, 0.15);
-      --card-bg: rgba(30, 41, 59, 0.5);
+      /* Sophisticated, Trustworthy, Warm Palette */
+      --bg: #FAFAF9; /* Warm Gray 50 */
+      --text-main: #44403C; /* Warm Gray 700 */
+      --text-dark: #1C1917; /* Warm Gray 900 */
+      --accent-primary: #0C4A6E; /* Deep Ocean Blue */
+      --accent-highlight: #D97706; /* Muted Amber */
+      --card-bg: #FFFFFF;
+      --border: #E7E5E4;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes gradientShift {
-      0%, 100% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
+      padding: 0;
     }
 
     body {
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
-      background-size: 200% 200%;
-      animation: gradientShift 15s ease infinite;
-      color: var(--fg);
-      padding: 2rem;
-      position: relative;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        radial-gradient(circle at 20% 30%, var(--accent-glow), transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.1), transparent 40%);
-      pointer-events: none;
-      z-index: 0;
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      font-size: 17px;
     }
 
     main {
-      max-width: 62rem;
-      backdrop-filter: blur(16px);
-      background: linear-gradient(
-        145deg,
-        rgba(30, 41, 59, 0.7) 0%,
-        rgba(15, 23, 42, 0.8) 100%
-      );
-      border: 1px solid var(--border);
-      border-radius: 1.5rem;
-      padding: clamp(2.5rem, 6vw, 4rem);
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      box-shadow: 
-        0 20px 60px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(255, 255, 255, 0.05) inset;
-      animation: fadeIn 0.8s ease-out;
-      position: relative;
-      z-index: 1;
+      width: 100%;
     }
 
+    /* Typography */
+    h1, h2, h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.82em;
+      text-transform: uppercase;
+      color: var(--accent-highlight);
+      margin-top: 0.5rem;
+      margin-left: 0.25rem;
+      margin-right: -0.82em; /* Compensate for last letter spacing */
+      display: block;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--accent-primary);
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--text-main);
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-main);
+    }
+
+    li::before {
+      content: "•";
+      color: var(--accent-highlight);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+      line-height: 1.5rem;
+    }
+
+    strong {
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    /* Header */
     header {
-      text-align: center;
-      padding-bottom: 1rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 5rem;
+      align-items: center;
+      padding: 6rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto 3rem;
       border-bottom: 1px solid var(--border);
     }
 
     .logo-container {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
-      border-radius: 0.75rem;
-      padding: 0.75rem 1.25rem;
-      box-shadow: 
-        0 4px 12px rgba(59, 130, 246, 0.3),
-        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+      flex-direction: column;
+      align-items: flex-start;
       position: relative;
-      overflow: hidden;
-    }
-
-    .logo::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      animation: shimmer 3s infinite;
-    }
-
-    @keyframes shimmer {
-      0%, 100% {
-        left: -100%;
-      }
-      50% {
-        left: 100%;
-      }
+      padding-right: 5rem;
+      border-right: 1px solid var(--border);
     }
 
     .logo-text {
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      font-weight: 800;
-      letter-spacing: 0.15em;
-      color: #ffffff;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 6vw, 3.75rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+      font-family: 'Merriweather', serif;
+      font-weight: 900;
+      font-size: 6.5rem;
+      color: var(--accent-primary);
+      letter-spacing: -0.04em;
+      line-height: 0.8;
+      background: linear-gradient(135deg, var(--accent-primary) 0%, #1e3a8a 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      line-height: 1.1;
-      display: inline;
-    }
-
-    h2 {
-      font-size: clamp(1.75rem, 4vw, 2.25rem);
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--fg);
-      letter-spacing: -0.01em;
-      position: relative;
-      display: inline-block;
-    }
-
-    h2::after {
-      content: '';
-      position: absolute;
-      bottom: -0.5rem;
-      left: 0;
-      width: 3rem;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
-      border-radius: 2px;
-    }
-
-    h3 {
-      font-size: clamp(1.35rem, 3.2vw, 1.75rem);
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      color: var(--accent-bright);
-      letter-spacing: -0.01em;
-    }
-
-    p {
-      line-height: 1.8;
-      font-size: 1.0625rem;
-      margin-bottom: 1rem;
-      color: var(--fg-muted);
     }
 
     header p {
-      font-size: 1.1875rem;
-      color: var(--fg);
-      line-height: 1.7;
-      max-width: 48rem;
-      margin: 0 auto;
+      font-size: 2.4rem;
+      max-width: 900px;
+      margin: 0;
+      color: var(--accent-primary);
+      font-family: 'Merriweather', serif;
+      font-weight: 400;
+      line-height: 1.3;
+      text-align: left;
+      font-style: normal;
     }
 
-    ul {
-      margin-left: 0;
-      list-style: none;
-      display: grid;
-      gap: 0.875rem;
-    }
-
-    li {
-      font-size: 1.0625rem;
-      line-height: 1.7;
-      color: var(--fg-muted);
-      padding-left: 1.75rem;
-      position: relative;
-    }
-
-    li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: var(--accent-bright);
-      font-weight: bold;
-    }
-
-    li strong {
-      color: var(--fg);
-      font-weight: 600;
-    }
-
+    /* Sections */
     .section {
-      display: grid;
-      gap: 1.5rem;
-      padding: 1.5rem;
-      background: var(--card-bg);
-      border-radius: 1rem;
+      max-width: 1400px;
+      margin: 0 auto 6rem;
+      padding: 0 2rem;
+    }
+
+    /* Table Styles (Desktop) */
+    .comparison-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 2rem;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
       border: 1px solid var(--border);
-      transition: all 0.3s ease;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.06);
     }
 
-    .section:hover {
-      background: rgba(30, 41, 59, 0.65);
-      border-color: rgba(148, 163, 184, 0.25);
-      transform: translateY(-2px);
-    }
-
-    .section > div {
-      padding: 1rem 0;
-    }
-
-    .section > div:not(:last-child) {
+    .comparison-table th, .comparison-table td {
+      padding: 2.5rem;
+      text-align: left;
       border-bottom: 1px solid var(--border);
     }
 
-    .partners {
-      text-align: center;
-      margin-top: 1rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .partners p:first-child {
-      color: var(--fg-muted);
-      font-size: 0.9375rem;
+    .comparison-table th {
+      background-color: #F3F4F6;
+      color: var(--accent-primary);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 1rem;
+      letter-spacing: 0.1em;
+      width: 20%;
+    }
+    
+    .comparison-table td {
+        vertical-align: top;
     }
 
+    .comparison-table tr:last-child td, 
+    .comparison-table tr:last-child th {
+      border-bottom: none;
+    }
+
+    /* Mobile Services (Hidden on Desktop) */
+    .mobile-services {
+      display: none;
+    }
+
+    /* Grid Layout - Unified Table Look */
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+
+    .grid-col {
+      padding: 3.5rem;
+      height: 100%;
+    }
+    
+    .grid-col:first-child {
+        border-right: 1px solid var(--border);
+    }
+    
+    .grid-col:hover {
+        background-color: #fafaf9;
+    }
+    
+    .grid-col h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* Links */
     a {
-      color: var(--accent-bright);
+      color: var(--accent-highlight);
       text-decoration: none;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      position: relative;
-    }
-
-    a::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
-      transition: width 0.3s ease;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+      font-weight: 600;
     }
 
     a:hover {
-      color: var(--accent);
-      text-decoration: none;
+      border-bottom-color: var(--accent-highlight);
     }
 
-    a:hover::after {
-      width: 100%;
+    /* Partners */
+    .partners {
+      margin-top: 4rem;
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 1rem;
+      color: var(--text-main);
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    @media (max-width: 1024px) {
+        header {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .logo-container {
+            align-items: center;
+            padding-right: 0;
+            border-right: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+            width: 100%;
+        }
+        
+        header p {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        /* Switch to Mobile Layout Earlier */
+        .grid-2-cols {
+            grid-template-columns: 1fr;
+        }
+        
+        .grid-col:first-child {
+            border-right: none;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .grid-col {
+            padding: 2.5rem;
+        }
+
+        /* Hide Table */
+        .comparison-table {
+            display: none;
+        }
+
+        /* Show Mobile Services */
+        .mobile-services {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mobile-service-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        .service-subtitle {
+            font-style: italic;
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-family: 'Merriweather', serif;
+            font-size: 1.1rem;
+        }
     }
 
     @media (max-width: 768px) {
-      body {
-        padding: 1rem;
-        align-items: flex-start;
-        padding-top: 2rem;
-      }
-
-      main {
-        padding: 2rem 1.5rem;
-        gap: 2rem;
-        border-radius: 1.25rem;
-        width: 100%;
-      }
-
       header {
-        padding-bottom: 1.5rem;
+          padding: 2rem 1.5rem;
       }
-
-      .logo-container {
-        gap: 0.5rem;
-      }
-
-      .logo {
-        padding: 0.625rem 1rem;
-        border-radius: 0.625rem;
-      }
-
+      
       .logo-text {
-        font-size: clamp(1.75rem, 6vw, 2.25rem);
+          font-size: 3.5rem;
       }
-
-      h1 {
-        font-size: clamp(2rem, 8vw, 2.5rem);
-      }
-
+      
       header p {
-        font-size: 1.0625rem;
+          font-size: 1.25rem;
       }
 
-      h2 {
-        font-size: clamp(1.5rem, 5vw, 1.75rem);
-        margin-bottom: 1.25rem;
-      }
-
-      h2::after {
-        width: 2.5rem;
-        bottom: -0.75rem;
-      }
-
-      h3 {
-        font-size: clamp(1.25rem, 4.5vw, 1.5rem);
-      }
-
-      p {
-        font-size: 1rem;
-      }
-
-      li {
-        font-size: 1rem;
-        padding-left: 1.5rem;
-      }
-
-      .section {
-        padding: 1.5rem 1.25rem;
-        gap: 1.25rem;
-      }
-
-      .section > div {
-        padding: 1rem 0;
-      }
-
-      ul {
-        gap: 0.75rem;
-      }
-
-      .partners {
-        padding-top: 1.5rem;
-        margin-top: 0.5rem;
-      }
-
-      .partners p:first-child {
-        font-size: 0.875rem;
-      }
-
-      .partners p:last-child {
-        font-size: 0.9375rem;
-      }
-
-      /* Better touch targets for mobile */
-      a {
-        padding: 0.25rem 0;
-        display: inline-block;
-      }
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 0.75rem;
-        padding-top: 1.5rem;
-      }
-
-      main {
-        padding: 1.75rem 1.25rem;
-        gap: 1.75rem;
-        border-radius: 1rem;
-      }
-
-      header {
-        padding-bottom: 1.25rem;
-      }
-
-      .logo-container {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .logo {
-        padding: 0.5rem 0.875rem;
-        border-radius: 0.5rem;
-      }
-
-      .logo-text {
-        font-size: 1.625rem;
-        letter-spacing: 0.12em;
-      }
-
-      h1 {
-        font-size: 1.875rem;
-        letter-spacing: -0.01em;
-      }
-
-      header p {
-        font-size: 1rem;
-        line-height: 1.65;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-
-      h2::after {
-        width: 2rem;
-        height: 2px;
-      }
-
-      h3 {
-        font-size: 1.25rem;
-        margin-bottom: 0.625rem;
-      }
-
-      p {
-        font-size: 0.9375rem;
-        line-height: 1.7;
-      }
-
-      li {
-        font-size: 0.9375rem;
-        padding-left: 1.25rem;
-        line-height: 1.65;
-      }
-
-      li::before {
-        font-size: 0.875rem;
-      }
-
-      .section {
-        padding: 1.25rem 1rem;
-        gap: 1rem;
-      }
-
-      .section > div {
-        padding: 0.875rem 0;
-      }
-
-      ul {
-        gap: 0.625rem;
-      }
-
-      .partners {
-        padding-top: 1.25rem;
-      }
-
-      .partners p:first-child {
-        font-size: 0.8125rem;
-        margin-bottom: 0.875rem;
-      }
-
-      .partners p:last-child {
-        font-size: 0.875rem;
-        line-height: 1.8;
-      }
-
-      /* Disable hover effects on small touch screens */
-      .section:hover {
-        transform: none;
-      }
-
-      /* Better spacing for links on mobile */
-      .partners a {
-        padding: 0.375rem 0.5rem;
+      .grid-col {
+          padding: 2rem;
       }
     }
   </style>
@@ -533,89 +373,115 @@
   <main>
     <header>
       <div class="logo-container">
-        <div class="logo">
-          <span class="logo-text">BNR</span>
-        </div>
+        <span class="logo-text">BnR</span>
         <h1>Partners</h1>
       </div>
-      <p>Expert security compliance and technical advisory services that help growing businesses build secure, compliant technology platforms. Get access to two senior experts—CISO and CTO-level experience—for a fraction of the cost of one full-time hire.</p>
+      <p>Expert security compliance and technical advisory services helping growing businesses build secure, compliant technology platforms.</p>
     </header>
 
     <section class="section">
-      <h2>The Challenge</h2>
-      <p>Growing businesses face increasing security and compliance demands across multiple frameworks and regulations. Access to high-quality expertise shouldn't require significant overhead or long-term commitments.</p>
-    </section>
+      <h2>Ways We Help</h2>
+      
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Service Model</th>
+            <th>The Scenario</th>
+            <th>What We Bring</th>
+            <th>The Goal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h3>Close the Gap</h3>
+              <p style="margin-bottom:0; font-size: 0.9rem; font-style: italic;">Strategic Leadership & Capability Building</p>
+            </td>
+            <td>
+              For companies whose teams are capable but need direction.
+            </td>
+            <td>
+              <ul>
+                <li>Technology strategy development</li>
+                <li>Team leadership and upskilling</li>
+                <li>Governance and delivery frameworks</li>
+                <li>Roadmap creation and optimisation</li>
+              </ul>
+            </td>
+            <td>
+              Align the team’s capability with the organisation’s expectations for long-term stability.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Fill the Gap</h3>
+              <p style="margin-bottom:0; font-size: 0.9rem; font-style: italic;">Complementing Your Existing Tech Leader</p>
+            </td>
+            <td>
+              Organisations with a strong leader who needs support in specific areas (e.g., security, architecture, governance).
+            </td>
+            <td>
+              <ul>
+                <li>Complementary executive support</li>
+                <li>Targeted expertise in gap areas</li>
+                <li>Vendor and delivery management</li>
+                <li>"Fill the gap" service</li>
+              </ul>
+            </td>
+            <td>
+              Ensure the organisation doesn’t lose momentum or risk capability gaps.
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <section class="section">
-      <h2>Why BNR Partners</h2>
-      <p>Unlike traditional consulting or hiring a single executive, BNR Partners gives you access to two complementary experts working together on your challenges:</p>
-      <ul>
-        <li><strong>Dual expertise</strong>—combined CISO and CTO perspectives ensure comprehensive security and technical solutions</li>
-        <li><strong>Better availability</strong>—two partners means consistent coverage and faster response times</li>
-        <li><strong>Built-in redundancy</strong>—no single point of failure; always someone available when you need support</li>
-        <li><strong>Cost-effective</strong>—get twice the expertise at a fraction of the cost of one full-time executive</li>
-        <li><strong>Complementary skills</strong>—security compliance expertise paired with technical implementation knowledge</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Our Solution</h2>
-      <p>We deliver flexible, executive-level security and technical expertise that scales with your business:</p>
-      <ul>
-        <li><strong>Compliance frameworks</strong>—strategic guidance and implementation for international security and privacy standards</li>
-        <li><strong>Security architecture</strong>—scalable designs that support business growth and protect critical assets</li>
-        <li><strong>DevSecOps implementation</strong>—accelerate secure deployments without slowing innovation</li>
-        <li><strong>Compliance automation</strong>—reduce manual overhead while increasing reliability and auditability</li>
-        <li><strong>Risk management</strong>—identify, prioritise, and mitigate security risks aligned with business objectives</li>
-        <li><strong>Technical advisory</strong>—hands-on implementation and strategic guidance tailored to your needs</li>
-        <li><strong>Team development</strong>—mentorship and training to build lasting security capabilities</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>How We Work</h2>
-      <p>Choose the engagement model that fits your needs:</p>
-      <div>
-        <h3>Project Engagements</h3>
-        <p>Time-bound, outcome-focused solutions for specific objectives:</p>
-        <ul>
-          <li>Compliance certification preparation and audit readiness</li>
-          <li>Security architecture reviews and remediation planning</li>
-          <li>Technology stack assessment and optimisation</li>
-          <li>Infrastructure security audits and gap analysis</li>
-        </ul>
+      <div class="mobile-services">
+        <div class="mobile-service-card">
+          <h3>Close the Gap</h3>
+          <p class="service-subtitle">Strategic Leadership & Capability Building</p>
+          <p>For companies whose teams are capable but need direction.</p>
+          <ul>
+            <li>Technology strategy development</li>
+            <li>Team leadership and upskilling</li>
+            <li>Governance and delivery frameworks</li>
+            <li>Roadmap creation and optimisation</li>
+          </ul>
+        </div>
+        
+        <div class="mobile-service-card">
+          <h3>Fill the Gap</h3>
+          <p class="service-subtitle">Complementing Your Existing Tech Leader</p>
+          <p>Organisations with a strong leader who needs support in specific areas.</p>
+          <ul>
+            <li>Complementary executive support</li>
+            <li>Targeted expertise in gap areas</li>
+            <li>Vendor and delivery management</li>
+            <li>"Fill the gap" service</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h3>Ongoing Partnerships</h3>
-        <p>Continuous strategic support as an extension of your leadership team:</p>
-        <ul>
-          <li>Security governance, policy development, and compliance management</li>
-          <li>Technical advisory with hands-on implementation support</li>
-          <li>Proactive risk management and threat mitigation</li>
-          <li>Technology strategy and roadmap development</li>
-        </ul>
+    </section>
+
+    <section class="section">
+      <div class="grid-2-cols">
+        <div class="grid-col">
+          <h2>How We Work</h2>
+          <p>Each engagement is defined by the client. We offer:</p>
+          <ul>
+            <li><strong>Part-time leadership</strong></li>
+            <li><strong>Project-based support</strong></li>
+            <li><strong>Transitional or interim roles</strong></li>
+            <li><strong>Ongoing strategic partnership</strong></li>
+          </ul>
+        </div>
+
+        <div class="grid-col">
+          <h2>Get Started</h2>
+          <p>Ready to strengthen your security posture and compliance framework? Let's discuss how we can support your organisation's goals.</p>
+          <p><strong>Email us:</strong> <a href="mailto:hello@bnr.partners">hello@bnr.partners</a></p>
+          <p>We typically respond within one business day to schedule an initial consultation.</p>
+        </div>
       </div>
-    </section>
-
-    <section class="section">
-      <h2>Our Expertise</h2>
-      <p>Our two founding partners bring decades of combined experience as CISO and CTO, working together to deliver comprehensive solutions across:</p>
-      <ul>
-        <li>Security compliance frameworks—implementation, audit preparation, and ongoing management</li>
-        <li>Enterprise architecture—cloud security, infrastructure design, and system integration</li>
-        <li>Risk management—governance frameworks, threat modeling, and mitigation strategies</li>
-        <li>Technology leadership—strategic planning and execution for scaling businesses</li>
-        <li>Data protection—privacy programme design and regulatory compliance</li>
-        <li>DevSecOps—secure CI/CD pipelines and automated security controls</li>
-      </ul>
-      <p>When you work with BNR Partners, you benefit from both security and technical perspectives on every challenge—providing more robust solutions and better outcomes than a single consultant could deliver.</p>
-    </section>
-
-    <section class="section">
-      <h2>Get Started</h2>
-      <p>Ready to strengthen your security posture and compliance framework? Let's discuss how we can support your organisation's goals.</p>
-      <p><strong>Email us:</strong> <a href="mailto:hello@bnr.partners">hello@bnr.partners</a></p>
-      <p>We typically respond within one business day to schedule an initial consultation.</p>
     </section>
 
     <div class="partners">
