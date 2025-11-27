@@ -23,7 +23,14 @@
 
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://www.google.co.nz; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.co.nz; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://cloudflareinsights.com https://www.google.co.nz;">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://www.google.co.nz https://analytics.google.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.co.nz https://analytics.google.com;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://cloudflareinsights.com https://www.google.co.nz https://analytics.google.com;
+  ">
 
   <script type="application/ld+json">
   {
