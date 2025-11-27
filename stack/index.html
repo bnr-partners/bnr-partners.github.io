@@ -311,7 +311,87 @@
             grid-template-columns: 1fr;
         }
     }
+    /* Cookie Banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fff;
+      border: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: none; /* Hidden by default */
+      z-index: 1000;
+      max-width: 350px;
+      font-size: 0.9rem;
+    }
+
+    #cookie-banner p {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    #cookie-banner .buttons {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: flex-end;
+    }
+
+    #cookie-banner button {
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      border: none;
+    }
+
+    #cookie-banner .accept-btn {
+      background-color: var(--accent-highlight);
+      color: white;
+    }
+
+    #cookie-banner .decline-btn {
+      background-color: #f3f4f6;
+      color: var(--text-main);
+    }
   </style>
+  
+  <!-- Google Analytics (gtag.js) - Loaded conditionally -->
+  <script>
+    function loadGA() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HC7GLM1633';
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HC7GLM1633');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const consent = localStorage.getItem('cookie_consent');
+      
+      if (consent === 'accepted') {
+        loadGA();
+      } else if (consent === null) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+
+      document.getElementById('accept-cookies').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'accepted');
+        document.getElementById('cookie-banner').style.display = 'none';
+        loadGA();
+      });
+
+      document.getElementById('decline-cookies').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'declined');
+        document.getElementById('cookie-banner').style.display = 'none';
+      });
+    });
+  </script>
 </head>
 <body>
   <nav class="top-menu">
@@ -447,5 +527,12 @@
       </p>
     </div>
   </main>
+  <div id="cookie-banner">
+    <p>We use cookies to analyze our traffic. Do you accept?</p>
+    <div class="buttons">
+      <button id="decline-cookies" class="decline-btn">Decline</button>
+      <button id="accept-cookies" class="accept-btn">Accept</button>
+    </div>
+  </div>
 </body>
 </html>
