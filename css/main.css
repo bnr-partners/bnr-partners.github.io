@@ -357,6 +357,13 @@ a:hover {
     font-family: 'Merriweather', serif;
     font-size: 1.1rem;
   }
+
+  /* Inline subtitle variants used in comparison table (replaces inline styles) */
+  .service-subtitle-inline {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
 }
 
 @media (max-width: 768px) {
