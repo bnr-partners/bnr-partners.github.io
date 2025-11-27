@@ -23,9 +23,12 @@
 
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://www.google.co.nz https://analytics.google.com;
+    base-uri 'self';
+    object-src 'none';
+    script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com https://www.google.co.nz https://analytics.google.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.co.nz https://analytics.google.com;
@@ -388,40 +391,7 @@
   </style>
   
   <!-- Google Analytics (gtag.js) - Loaded conditionally -->
-  <script>
-    function loadGA() {
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HC7GLM1633';
-      document.head.appendChild(script);
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HC7GLM1633');
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      const consent = localStorage.getItem('cookie_consent');
-      
-      if (consent === 'accepted') {
-        loadGA();
-      } else if (consent === null) {
-        document.getElementById('cookie-banner').style.display = 'block';
-      }
-
-      document.getElementById('accept-cookies').addEventListener('click', function() {
-        localStorage.setItem('cookie_consent', 'accepted');
-        document.getElementById('cookie-banner').style.display = 'none';
-        loadGA();
-      });
-
-      document.getElementById('decline-cookies').addEventListener('click', function() {
-        localStorage.setItem('cookie_consent', 'declined');
-        document.getElementById('cookie-banner').style.display = 'none';
-      });
-    });
-  </script>
+  <script src="../js/main.js"></script>
 </head>
 <body>
   <nav class="top-menu">
