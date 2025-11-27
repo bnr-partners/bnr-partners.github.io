@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --bg: #FAFAF9;
+  --text-main: #44403C;
+  --text-dark: #1C1917;
+  --accent-primary: #0C4A6E;
+  --accent-highlight: #D97706;
+  --card-bg: #FFFFFF;
+  --border: #E7E5E4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 4rem 3rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+  margin-bottom: 2.5rem;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mobile-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  stroke-width: 1.5;
+}
+
+.mobile-welcome {
+  font-family: 'Merriweather', serif;
+  font-size: 1.4rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.mobile-content p {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-hint {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.desktop-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  stroke-width: 1.5;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .card {
+    padding: 3rem 1.5rem;
+  }
+
+  .logo {
+    height: 8rem;
+  }
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  color: var(--accent-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-highlight);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #b45309;
+  transform: translateY(-2px);
+}
